@@ -33,7 +33,7 @@ useEffect(() => {
           <div className="flex-shrink-0 flex items-center gap-2">
             <img
               className="h-12 w-12"
-              src="../src/assets/images/logo.png"
+              src="./src/assets/images/logo.png"
               alt="logo"
             />
             <span className="text-xl font-semibold text-gray-800">
