@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiShoppingCart, FiUser, FiMenu, FiX } from "react-icons/fi";
+import logo from "../assets/images/logo.png"; // Adjust path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +32,8 @@ useEffect(() => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <img
-              className="h-12 w-12"
-              src="/assets/images/logo.png"
-              alt="logo"
-            />
+            <img src={logo} alt="Logo" />
+
             <span className="text-xl font-semibold text-gray-800">
               EarthBubs
             </span>
