@@ -2,6 +2,7 @@ import React from "react";
 import { FaLeaf, FaGlobeAmericas, FaHeart } from "react-icons/fa";
 import { GiBabyBottle } from "react-icons/gi";
 import { MdVerifiedUser } from "react-icons/md";
+import logo from "../assets/images/logoabout.png"; // Adjust path
 
 const AboutUs = () => {
   return (
@@ -15,9 +16,7 @@ const AboutUs = () => {
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:w-1/3">
-        <img
-            src="../src/assets/images/logoabout.png" // <-- Replace with your image path
-            alt="EarthBubs Logo"
+        <img src={logo} alt="EarthBubs Logo"
             className="w-32 h-32 md:w-40 md:h-40 object-contain"
         />
         <h1 className="text-2xl font-bold mt-4">EarthBubs</h1>
